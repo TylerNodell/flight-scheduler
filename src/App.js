@@ -18,28 +18,28 @@ const DnDCalendar = withDragAndDrop(Calendar);
 const events = [
   {
     id: 0,
-    title: 'Board meeting',
+    title: 'Test Flight',
     start: new Date(2018, 0, 29, 9, 0, 0),
     end: new Date(2018, 0, 29, 13, 0, 0),
     resourceId: 1,
   },
   {
     id: 1,
-    title: 'MS training',
+    title: 'Flight to JFK',
     start: new Date(2018, 0, 29, 14, 0, 0),
     end: new Date(2018, 0, 29, 16, 30, 0),
     resourceId: 2,
   },
   {
     id: 2,
-    title: 'Team lead meeting',
+    title: 'Airshow',
     start: new Date(2018, 0, 29, 8, 30, 0),
     end: new Date(2018, 0, 29, 12, 30, 0),
     resourceId: 3,
   },
   {
     id: 11,
-    title: 'Birthday Party',
+    title: 'Teaching',
     start: new Date(2018, 0, 30, 7, 0, 0),
     end: new Date(2018, 0, 30, 10, 30, 0),
     resourceId: 4,
@@ -159,7 +159,7 @@ class App extends Component {
           resources={resourceMap}
           resourceIdAccessor="resourceId"
           resourceTitleAccessor="resourceTitle"
-          style={{ height: "100vh", width: "100vw", overflowX: 'scroll' }}
+          style={{ height: "100vh", overflowX: 'scroll' }}
         />
       </div>
     );
